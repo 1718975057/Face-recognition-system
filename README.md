@@ -52,10 +52,6 @@
 
 - **Unity 版本**：2020.3 LTS 或更高版本（推荐 2021.3 LTS+）
 - **操作系统**：Windows 10/11（macOS 部分摄像头需额外配置）
-- **必备插件/库**：
-  - [OpenCV for Unity](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088)（付费，图像处理与人脸检测）
-  - 或基于 [Dlib FaceLandmark Detector](https://github.com/…) 的 Unity 封装
-  - 若使用深度学习模型（如 ArcFace），需集成 [Barracuda](https://docs.unity3d.com/Packages/com.unity.barracuda@latest) 或 [ONNX Runtime](https://github.com/microsoft/onnxruntime) 推理引擎
 - **摄像头**：内置或 USB 摄像头（需在 Unity 中赋予相机权限）
 
 ### 下载与运行
