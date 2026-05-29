@@ -38,11 +38,8 @@
 
 > 请替换为你的实际截图或 GIF。
 
-| 人脸注册界面 | 实时识别界面 | 通行记录查看 |
-|--------------|--------------|--------------|
-| ![register](Screenshots/register.png) | ![recognize](Screenshots/recognize.png) | ![log](Screenshots/log.png) |
+<img width="1608" height="930" alt="image" src="https://github.com/user-attachments/assets/682a0bae-13e1-4ac6-aac1-b794ea169bab" />
 
-也可提供一段演示视频链接（如 B 站、YouTube 或仓库内的视频文件）。
 
 ---
 
