@@ -40,6 +40,9 @@
 
 ## 🎬 效果演示
 
+[![点击观看B站演示视频](<img width="840" height="525" alt="image" src="https://github.com/user-attachments/assets/5bc5ffaf-5561-42b1-9618-c3b963e581a9" />
+)]([https://www.bilibili.com/video/你的视频BV号/](https://www.bilibili.com/video/BV16n576XEXk?t=0.5))
+
 
 ---
 
