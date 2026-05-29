@@ -1,2 +1,65 @@
-# Face-recognition-system
-This project developed an access control system using Unity, which features facial recognition and passage management functions.
+# 🔐 Unity 人脸识别门禁系统
+
+> 基于 Unity 引擎开发的智能人脸识别门禁模拟系统，支持**人脸注册、实时识别、门禁控制**与**通行记录存储**，可用于展示、教学或安防原型验证。
+
+---
+
+## 📖 项目简介
+
+本项目利用 Unity 实现了一套完整的**人脸识别门禁逻辑**，通过摄像头实时检测人脸，并与已注册的人脸库进行比对。当识别到合法人员时，系统自动“开门”并记录通行日志；未注册人员则被拦截并告警。
+
+系统重点展示 **人脸注册 → 特征提取 → 实时比对 → 门禁控制 → 日志存储** 这一完整流程，界面清晰，交互直观，适合作为课程设计、创意作品或技术 Demo 上传到 GitHub。
+
+---
+
+## ✨ 核心功能
+
+- 📷 **实时人脸检测**  
+  通过摄像头采集视频流，自动检测画面中的人脸区域，并标注框体。
+
+- 🧠 **人脸注册与特征提取**  
+  输入姓名并拍摄/选择人脸照片，提取人脸特征向量并保存到本地数据库，完成“人脸入库”。
+
+- 🔍 **实时人脸识别**  
+  将摄像头前的人脸特征与注册库中的特征进行比对，返回匹配结果（人员姓名或“未识别”）。
+
+- 🚪 **门禁控制模拟**  
+  识别成功 → 触发开门动画 / UI 提示（例如显示绿色通行、门锁打开效果）；识别失败 → 保持关闭并给出警告提示。
+
+- 📋 **通行记录存储与查看**  
+  每一次识别事件都会被记录：**人员姓名、通行时间、识别置信度、通行状态（允许/拒绝）**。支持在系统内查看历史记录列表，也可导出为 JSON/CSV 文件。
+
+- 🎛️ **可配置的识别阈值**  
+  在 UI 或配置文件中调整识别相似度阈值，平衡安全性与易用性。
+
+---
+
+## 🎬 效果演示
+
+> 请替换为你的实际截图或 GIF。
+
+| 人脸注册界面 | 实时识别界面 | 通行记录查看 |
+|--------------|--------------|--------------|
+| ![register](Screenshots/register.png) | ![recognize](Screenshots/recognize.png) | ![log](Screenshots/log.png) |
+
+也可提供一段演示视频链接（如 B 站、YouTube 或仓库内的视频文件）。
+
+---
+
+## 🛠️ 快速开始
+
+### 环境要求
+
+- **Unity 版本**：2020.3 LTS 或更高版本（推荐 2021.3 LTS+）
+- **操作系统**：Windows 10/11（macOS 部分摄像头需额外配置）
+- **必备插件/库**：
+  - [OpenCV for Unity](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088)（付费，图像处理与人脸检测）
+  - 或基于 [Dlib FaceLandmark Detector](https://github.com/…) 的 Unity 封装
+  - 若使用深度学习模型（如 ArcFace），需集成 [Barracuda](https://docs.unity3d.com/Packages/com.unity.barracuda@latest) 或 [ONNX Runtime](https://github.com/microsoft/onnxruntime) 推理引擎
+- **摄像头**：内置或 USB 摄像头（需在 Unity 中赋予相机权限）
+
+### 下载与运行
+
+1. **克隆本仓库**
+   ```bash
+   git clone https://github.com/你的用户名/Unity-FaceRecognition-AccessControl.git
