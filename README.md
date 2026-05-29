@@ -34,11 +34,14 @@
 
 ---
 
+##配置页面
+<img width="1608" height="930" alt="image" src="https://github.com/user-attachments/assets/682a0bae-13e1-4ac6-aac1-b794ea169bab" />
+可以按图片点击生成UI界面，已封装成插件
+
 ## 🎬 效果演示
 
-> 请替换为你的实际截图或 GIF。
 
-<img width="1608" height="930" alt="image" src="https://github.com/user-attachments/assets/682a0bae-13e1-4ac6-aac1-b794ea169bab" />
+
 
 
 ---
